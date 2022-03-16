@@ -106,6 +106,24 @@ main{
   overflow: hidden;
 }
 
+button.btn:nth-child(3){
+  color: black;
+  background: transparent;
+  background-color: transparent;
+  content: ' ';
+  z-index: -1;
+  border-color: black;
+  border-radius: 4px;
+}
+
+button.btn:nth-child(3)::after{
+  background: transparent;
+  content: ' ';
+  z-index: -1;
+  border-radius: 4px;
+}
+
+
 p.para{
     color: black;
     font: normal 500 16px;
@@ -274,6 +292,10 @@ div.container-fluid:nth-child(2) > div:nth-child(1) > div:nth-child(1){
     .services-list{
       display: flex;
       justify-content: center;
+    }
+
+    .cards{
+      justify-content: space-between;
     }
 
 
